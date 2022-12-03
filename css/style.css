@@ -28,3 +28,16 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #102746;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
