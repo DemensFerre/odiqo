@@ -76,3 +76,63 @@ body {
 }
 
 /* header end */
+
+/* intro start */
+
+.intro {
+  min-height: 100vh;
+  padding-top: 263px;
+  background: url("../img/intro/intro-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.intro__title {
+  max-width: 619px;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.intro__subtitle {
+  max-width: 546px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+.form-search__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-search__field {
+  width: 297px;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 700;
+  background: transparent url("../img/svg/circle.svg") no-repeat left 6px;
+  background-size: 20px;
+  border: none;
+  border-bottom: 2px solid #bfc0c5;
+  color: #fff;
+}
+.form-search__field::placeholder {
+  font-weight: 700;
+  color: #fff;
+}
+.form-search__btn {
+  padding: 15px 39px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  border: none;
+  background: #1b7dff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.form-search__btn:hover,
+.form-search__btn:focus,
+.form-search__btn:active {
+  background: #0e448d;
+  color: #7a7a7a;
+}
+/* intro end */
