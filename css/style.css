@@ -41,3 +41,32 @@ body {
   max-width: 1060px;
   margin: 0 auto;
 }
+
+/* header start */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__list-item:not(:last-child) {
+  margin-right: 82px;
+}
+.header__list-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* header end */
