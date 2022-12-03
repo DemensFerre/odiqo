@@ -67,6 +67,12 @@ body {
 .header__list-link {
   text-decoration: none;
   color: #fff;
+  transition: all 0.3s ease;
+}
+.header__list-link:hover,
+.header__list-link:focus,
+.header__list-link:active {
+  opacity: 0.6;
 }
 
 /* header end */
