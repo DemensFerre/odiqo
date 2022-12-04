@@ -101,6 +101,7 @@ img {
 .intro {
   min-height: 100vh;
   padding-top: 263px;
+  padding-bottom: 372px;
   background: url("../img/intro/intro-bg.jpg") no-repeat center;
   background-size: cover;
 }
