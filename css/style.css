@@ -46,6 +46,10 @@ img {
   max-width: 1060px;
   margin: 0 auto;
 }
+.container_wide {
+  max-width: 1262px;
+  margin: 0 auto;
+}
 
 .link {
   display: inline-block;
