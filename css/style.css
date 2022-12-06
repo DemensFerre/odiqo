@@ -65,6 +65,22 @@ img {
   background: url(../img/svg/arrow-ico.svg) no-repeat right center;
 }
 
+.section-title {
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 253px;
+  height: 3px;
+  background-color: #006dfe;
+}
 /* header start */
 
 .header {
@@ -212,3 +228,65 @@ img {
 }
 
 /* benefits end */
+
+/* places start */
+.places {
+  margin-bottom: 131px;
+}
+.places__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.places__title {
+  margin-right: 10px;
+}
+.places__grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+}
+.places__card {
+  position: relative;
+  overflow: hidden;
+}
+.places__card:hover .places__card-pic {
+  transform: scale(1.05);
+}
+.places__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(21, 24, 36, 0.4);
+}
+.places__card_large {
+  grid-column: span 3;
+  height: 354px;
+}
+.places__card-pic {
+  object-fit: cover;
+  transition: all 0.2s ease-in;
+}
+.places__card_large .places__card-pic {
+  height: 354px;
+}
+.places__card-desc {
+  position: absolute;
+  left: 39px;
+  bottom: 27px;
+  z-index: 3;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff;
+}
+.places__card_small {
+  grid-column: span 2;
+}
+.places__card_large .places__card_small {
+  height: 283px;
+}
+/* places end */
