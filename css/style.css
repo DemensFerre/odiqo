@@ -87,7 +87,13 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   width: 100%;
+  transition: all 0.2s;
+}
+.header_active {
+  background-color: #102746;
+  padding-bottom: 20px;
 }
 .header__wrapper {
   display: flex;
