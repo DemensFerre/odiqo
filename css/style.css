@@ -298,6 +298,7 @@ img {
 .places__card_large .places__card_small {
   height: 283px;
 }
+
 /* places end */
 
 .tours {
@@ -323,12 +324,6 @@ img {
 }
 .tour__pic {
   overflow: hidden;
-}
-.tour__pic:hover .tour__thumb {
-  transform: scale(1.05);
-}
-.tour__thumb {
-  transition: all 0.2s ease-in;
 }
 .tour__title {
   max-width: 366px;
@@ -356,10 +351,9 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 56px;
 }
-.card-top-visits {
-}
 .card-top-visits__pic {
   position: relative;
+  display: block;
   height: 377px;
   overflow: hidden;
   margin-bottom: 45px;
