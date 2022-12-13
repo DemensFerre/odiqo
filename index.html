@@ -23,16 +23,36 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
-                <a href="#!" class="header__list-link">Articles</a>
+                <a
+                  href="#!"
+                  class="header__list-link js-link"
+                  data-link-to-section="tours"
+                  >Articles</a
+                >
               </li>
               <li class="header__list-item">
-                <a href="#!" class="header__list-link">Locations</a>
+                <a
+                  href="#!"
+                  class="header__list-link js-link"
+                  data-link-to-section="top-visits"
+                  >Locations</a
+                >
               </li>
               <li class="header__list-item">
-                <a href="#!" class="header__list-link">Videos</a>
+                <a
+                  href="#!"
+                  class="header__list-link js-link"
+                  data-link-to-section="videos"
+                  >Videos</a
+                >
               </li>
               <li class="header__list-item">
-                <a href="#!" class="header__list-link">Sign in</a>
+                <a
+                  href="#!"
+                  class="header__list-link js-link"
+                  data-link-to-section="intro"
+                  >Sign in</a
+                >
               </li>
             </ul>
 
@@ -46,7 +66,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="intro">
+      <section class="intro" id="js-section">
         <div class="container">
           <h1 class="intro__title">Discover Amazing places in Japan</h1>
           <p class="intro__subtitle">
@@ -190,7 +210,7 @@
           </div>
         </div>
       </section>
-      <section class="tours">
+      <section class="tours" id="js-section">
         <div class="container_wide">
           <div class="tour__grid tour tour_left">
             <div class="tour__pic">
@@ -234,7 +254,7 @@
           </div>
         </div>
       </section>
-      <section class="top-visits">
+      <section class="top-visits" id="js-section">
         <div class="container_wide">
           <h2 class="top-visits__title section-title">
             Today top places to visit
@@ -387,7 +407,7 @@
           </div>
         </div>
       </section>
-      <section class="videos">
+      <section class="videos" id="js-section">
         <div class="videos__container">
           <div class="videos__item">
             <img
