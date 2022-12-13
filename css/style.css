@@ -215,6 +215,11 @@ img {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .header__nav {
+    padding: 50px;
+  }
+}
 /* header end */
 
 /* intro start */
@@ -277,6 +282,40 @@ img {
   color: #7a7a7a;
 }
 
+@media screen and (max-width: 930px) {
+  .intro {
+    padding-bottom: 50px;
+  }
+  .form-search__field {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .intro {
+    min-height: 0;
+    padding-top: 120px;
+  }
+  .form-search__wrapper {
+    flex-direction: column;
+  }
+  .form-search__field {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 0;
+  }
+  .form-search__btn {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .intro__title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+
 /* intro end */
 
 /* benefits start */
@@ -311,6 +350,8 @@ img {
 }
 .benefits__card {
   grid-column: span 1;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 112px;
 }
 .benefits__card-pic {
@@ -326,6 +367,52 @@ img {
   margin-bottom: 39px;
   font-size: 16px;
   color: #000;
+}
+.benefits__card-more {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 930px) {
+  .benefits {
+    margin-bottom: 50px;
+  }
+  .benefits__title {
+    position: static;
+    transform: translateY(0);
+    padding: 30px 15px;
+  }
+  .benefits__grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .benefits__card {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .benefits__card {
+    grid-column: span 2;
+  }
+  .benefits__card-more {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .benefits__card {
+    grid-column: span 3;
+    margin-bottom: 20px;
+  }
+  .benefits__card-pic {
+    margin-bottom: 20px;
+  }
+  .benefits__card-title {
+    margin-bottom: 15px;
+  }
+  .benefits__card-text {
+    margin-bottom: 15px;
+  }
 }
 
 /* benefits end */
@@ -391,6 +478,30 @@ img {
   height: 283px;
 }
 
+@media screen and (max-width: 930px) {
+  .places {
+    margin-bottom: 80px;
+  }
+  .places__card_large {
+    grid-column: span 6;
+    height: 300px;
+  }
+  .places__card_small {
+    grid-column: span 6;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .places__row {
+    display: block;
+  }
+  .places__title {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
 /* places end */
 
 .tours {
@@ -430,6 +541,48 @@ img {
   font-size: 16px;
 }
 
+@media screen and (max-width: 930px) {
+  .tours {
+    margin-bottom: 80px;
+  }
+  .tour__grid {
+    gap: 35px;
+  }
+  .tour_left .tour__info {
+    padding: 0;
+  }
+  .tour_right .tour__info {
+    padding: 0;
+  }
+  .tour:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .tour__title {
+    margin-bottom: 15px;
+  }
+  .tour__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tour__grid {
+    gap: 15px;
+  }
+  .tour__pic {
+    grid-column: span 2;
+  }
+  .tour_right .tour__pic {
+    order: 0;
+  }
+  .tour__info {
+    grid-column: span 2;
+  }
+  .tour__text {
+    max-width: 100%;
+  }
+}
+
 /* top-visits start */
 
 .top-visits {
@@ -455,6 +608,7 @@ img {
 }
 .card-top-visits__thumb {
   height: 100%;
+  object-fit: cover;
   transition: all 0.2s ease-in;
 }
 .card-top-visits__stats {
@@ -508,6 +662,40 @@ img {
   background: #0e448d;
 }
 
+@media screen and (max-width: 992px) {
+  .top-visits {
+    margin-bottom: 80px;
+  }
+  .top-visits__grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 35px;
+  }
+  .top-visits__card {
+    grid-column: span 3;
+  }
+  .card-top-visits__pic {
+    margin-bottom: 15px;
+  }
+  .card-top-visits__text {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .top-visits__grid {
+    gap: 35px 10px;
+  }
+  .card-top-visits__pic {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .top-visits__card {
+    grid-column: span 6;
+  }
+}
+
 /* top-visits end */
 
 /* videos start */
@@ -557,6 +745,12 @@ img {
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 650px) {
+  .videos__play {
+    width: 75px;
+  }
+}
 /* videos end */
 
 /* footer start */
@@ -600,5 +794,44 @@ img {
 .footer__list-link:focus,
 .footer__list-link:active {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 930px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer__logo {
+    flex-basis: 30%;
+  }
+  .footer__logo .logo {
+    margin-right: 15px;
+  }
+  .footer__nav {
+    flex-basis: 70%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__wrapper {
+    display: block;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__logo .logo {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer__nav {
+    display: block;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 /* footer end */
