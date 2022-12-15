@@ -2,7 +2,7 @@
 
 ---
 
-:point_right:**Link to view the project** - https://demensferre.github.io/heroes/ :point_left:
+:point_right:**Link to view the project** - https://demensferre.github.io/odiqo/ :point_left:
 
 ---
 
